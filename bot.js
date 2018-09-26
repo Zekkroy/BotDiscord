@@ -8,9 +8,9 @@ client.on('ready', () => {
 
 var prefix = config.prefix;
 
-client.on('message', message => {
-    if (message.content === 'prefix + ping') {
-    	message.reply('pong');
+client.on("message", (message) => {
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
   	}
 });
 
