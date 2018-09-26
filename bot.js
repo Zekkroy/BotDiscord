@@ -6,6 +6,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+var prefix = config.prefix;
+
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
