@@ -23,7 +23,7 @@ var prefix = config.prefix;
         if (message.content == (prefix + "ayuda")) {
         var ayuda = new Discord.RichEmbed()
         .setTitle("Comandos y ayudas")
-        .setDescription("\n\n**!ayuda**: Lista de comandos y información del bot.\n**!ping**: pong.")
+        .addField("Comandos básicos""\n\n**!ayuda**: Lista de comandos y información del bot.\n**!ping**: pong.")
         .setFooter("Bot en desarrollo, creado por Zekkroy#6541.")
         .setThumbnail(message.author.avatarURL)
         .setColor(0xdd2596)
