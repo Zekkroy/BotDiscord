@@ -20,7 +20,7 @@ if (message.content == (prefix + "ayuda")) {
       color: 3447003,
       description: "Este bot está en pleno desarrollo. La variedad de comandos es muy escasa actualmente, se irán añadiendo nuevos progresivamente. :robot:."
     }});
-}
+}}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
