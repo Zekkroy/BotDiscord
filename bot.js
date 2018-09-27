@@ -23,7 +23,7 @@ var prefix = config.prefix;
         if (message.content == (prefix + "ayuda")) {
         var ayuda = new Discord.RichEmbed()
         .setDescription("Esto es una prueba")
-        .setColor("#dd2596")
+        .setColor(0xdd2596)
         message.author.sendEmbed(ayuda);
         }
     });
