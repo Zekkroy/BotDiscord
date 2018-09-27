@@ -9,10 +9,6 @@ client.on('ready', () => {
 var prefix = config.prefix;
 
 client.on("message", (message) => {
-  if (!message.content.startsWith(config.prefix)) return;
-  if (message.author.bot) return;
-
-client.on("message", (message) => {
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   	}
