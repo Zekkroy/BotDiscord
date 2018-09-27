@@ -21,11 +21,9 @@ var prefix = config.prefix;
 
     client.on("message", (message) => {
         if (message.content == (prefix + "ayuda")) {
-        var embed = new Discord.RichEmbed()
-        .setTitle("Título de Embed.")
-        .setColor(0xFB00FF)
+        var ayuda = new Discord.RichEmbed()
         .setDescription("Esto es una prueba");
-        message.channel.send(embed);
+        message.channel.sendEmbed(ayuda);
         }
     });
 
