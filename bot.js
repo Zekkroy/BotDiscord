@@ -22,7 +22,8 @@ var prefix = config.prefix;
     client.on("message", (message) => {
         if (message.content == (prefix + "ayuda")) {
         var ayuda = new Discord.RichEmbed()
-        .setDescription("Esto es una prueba")
+        .setTitle("Comandos y ayudas")
+        .setDescription("Este bot está en pleno desarrollo.")
         .setColor(0xdd2596)
         message.author.sendEmbed(ayuda);
         }
