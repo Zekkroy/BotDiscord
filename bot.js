@@ -24,7 +24,7 @@ var prefix = config.prefix;
         var ayuda = new Discord.RichEmbed()
         .setTitle("Comandos y ayudas")
         .setDescription("\n\n**!ayuda**: Lista de comandos y información del bot.\n**!ping**: Bot pong!")
-        .setFooter("**Bot en desarrollo**, creado por Zekkroy#6541.")
+        .setFooter("Bot en desarrollo, creado por Zekkroy#6541.")
         .setThumbnail(message.author.avatarURL)
         .setColor(0xdd2596)
         message.author.sendEmbed(ayuda);
