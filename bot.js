@@ -22,7 +22,7 @@ var prefix = config.prefix;
     client.on("message", (message) => {
         if (message.content == (prefix + "ayuda")) {
         var ayuda = new Discord.RichEmbed()
-        .setDescription("Esto es una prueba");
+        .setDescription("Esto es una prueba")
         message.channel.sendEmbed(ayuda);
         }
     });
