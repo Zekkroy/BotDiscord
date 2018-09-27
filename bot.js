@@ -14,7 +14,8 @@ client.on("message", (message) => {
   	}
 });
 
-if (message.content == (prefix + "ayuda")){
+client.on("message", (message) => {
+if (message.content == (prefix + "ayuda")) {
     message.channel.send({embed: {
       color: 3447003,
       description: "Este bot está en pleno desarrollo. La variedad de comandos es muy escasa actualmente, se irán añadiendo nuevos progresivamente. :robot:."
