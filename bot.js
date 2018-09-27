@@ -8,12 +8,26 @@ client.on('ready', () => {
 
 var prefix = config.prefix;
 
-client.on("message", (message) => {
-  if (message.content == (prefix + "ping")) {
-    message.channel.send("pong!");
-  	}
-});
+/* Comando "!ping", el cual el Bot nos responderá con un "pong!". */
 
+    client.on("message", (message) => {
+        if (message.content == (prefix + "ping")) {
+        message.channel.send("pong!");
+        }
+    });
+
+
+/*  */
+
+    client.on("message", (message) => {
+        if (message.content == (prefix + "ayuda")) {
+        const embed = new RichEmbed()
+        .setTitle("Título de Embed.")
+        .setColor(0xFB00FF)
+        .setDescription("Esto es una prueba");
+        message.channel.send(embed);
+        }
+    });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
