@@ -9,7 +9,7 @@ client.on('ready', () => {
 var prefix = config.prefix;
 
 client.on("message", (message) => {
-  if (message.content.startsWith(prefix + "ping")) {
+  if (message.content == (prefix + "ping")) {
     message.channel.send("pong!");
   	}
 });
